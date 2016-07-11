@@ -2032,16 +2032,17 @@ Mavlink::task_main(int argc, char *argv[])
 		configure_stream("EXTENDED_SYS_STATE", 1.0f);
 		configure_stream("ATTITUDE", 25.0f);
 		configure_stream("RC_CHANNELS", 5.0f);
-		configure_stream("SERVO_OUTPUT_RAW_0", 1.0f);
-		configure_stream("ALTITUDE", 1.0f);
+		//configure_stream("SERVO_OUTPUT_RAW_0", 1.0f);
+		configure_stream("ALTITUDE", 25.0f);
 		configure_stream("GPS_RAW_INT", 1.0f);
-		configure_stream("ESTIMATOR_STATUS", 1.0f);
-		configure_stream("GLOBAL_POSITION_INT", 10.0f);
-		configure_stream("ATTITUDE_TARGET", 10.0f);
-		configure_stream("HOME_POSITION", 0.5f);
+		//configure_stream("ESTIMATOR_STATUS", 1.0f);
+		//configure_stream("GLOBAL_POSITION_INT", 10.0f);
+		//configure_stream("ATTITUDE_TARGET", 10.0f);
+		//configure_stream("HOME_POSITION", 0.5f);
 		configure_stream("VFR_HUD", 25.0f);
 		configure_stream("WIND_COV", 2.0f);
 		configure_stream("SYSTEM_TIME", 1.0f);
+                configure_stream("NAV_CONTROLLER_OUTPUT", 1.0f);
 		break;
 
 	case MAVLINK_MODE_MAGIC:
