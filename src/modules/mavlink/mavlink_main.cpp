@@ -2040,7 +2040,7 @@ Mavlink::task_main(int argc, char *argv[])
 		//configure_stream("ATTITUDE_TARGET", 10.0f);
 		//configure_stream("HOME_POSITION", 0.5f);
 		configure_stream("VFR_HUD", 25.0f);
-		configure_stream("WIND_COV", 2.0f);
+		//configure_stream("WIND_COV", 2.0f);
 		configure_stream("SYSTEM_TIME", 1.0f);
                 configure_stream("NAV_CONTROLLER_OUTPUT", 1.0f);
 		break;
